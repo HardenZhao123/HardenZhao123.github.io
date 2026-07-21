@@ -1,0 +1,17 @@
+# Local system files
+.DS_Store
+Thumbs.db
+
+# Temporary development output
+node_modules/
+.vinext/
+.wrangler/
+dist/
+out/
+coverage/
+tmp/
+
+# Logs and environment files
+*.log
+.env
+.env.*
