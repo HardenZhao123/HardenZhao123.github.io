@@ -24,7 +24,7 @@ Then visit `http://localhost:8000`.
 
 - `index.html`: page content, education, experiences, and projects.
 - `assets/styles.css`: visual design and responsive layout.
-- `assets/script.js`: dynamic footer year.
+- `assets/script.js`: dynamic footer year and saved light/dark theme toggle.
 - `assets/avatar.jpg`: profile image.
 - `assets/imperial-college-london-logo.png`: Imperial College London logo used in Education.
 - `assets/peking-university-logo.png`: Peking University logo used in Experiences.

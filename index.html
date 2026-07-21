@@ -8,6 +8,15 @@
       content="Zihao Zhao's academic homepage with education, experiences, and projects."
     />
     <title>Zihao Zhao's Homepage</title>
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("zihao-theme") === "light") {
+            document.documentElement.dataset.theme = "light";
+          }
+        } catch (error) {}
+      })();
+    </script>
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -21,6 +30,18 @@
           <a href="#experiences">Experiences</a>
           <a href="#projects">Projects</a>
         </div>
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch to light theme"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle-track" aria-hidden="true">
+            <span class="theme-toggle-thumb"></span>
+          </span>
+          <span class="theme-toggle-label">Dark</span>
+        </button>
       </nav>
     </header>
 
@@ -40,10 +61,8 @@
           </p>
 
           <ul class="author-links">
-            <li><a href="https://scholar.google.com" rel="noreferrer">Google Scholar</a></li>
-            <li><a href="https://github.com" rel="noreferrer">GitHub</a></li>
+            <li><a href="https://github.com/HardenZhao123" rel="noreferrer">GitHub</a></li>
             <li><a href="mailto:zhaozihao9218@sina.com">Email</a></li>
-            <li><span>Imperial College London</span></li>
           </ul>
 
           <p class="motto">行远自迩，笃行不怠</p>
