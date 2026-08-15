@@ -5,49 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Zihao Zhao's personal computing portfolio with education, experiences, and projects."
+      content="Zihao Zhao's academic homepage with education, experiences, and projects."
     />
-    <title>Zihao Zhao / Computing Portfolio</title>
-    <script>
-      (function () {
-        try {
-          if (localStorage.getItem("zihao-theme") === "light") {
-            document.documentElement.dataset.theme = "light";
-          }
-        } catch (error) {}
-      })();
-    </script>
+    <title>Zihao Zhao</title>
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <nav class="top-nav" aria-label="Primary navigation">
-        <a class="site-title" href="#main">Zihao Zhao / Computing</a>
-        <div class="nav-links" id="site-nav">
-          <a href="#about">About</a>
-          <a href="#experiences">Experiences</a>
-          <a href="#projects">Projects</a>
-        </div>
-        <button
-          class="theme-toggle"
-          type="button"
-          data-theme-toggle
-          aria-label="Switch to light theme"
-          aria-pressed="false"
-        >
-          <span class="theme-toggle-track" aria-hidden="true">
-            <span class="theme-toggle-thumb"></span>
-          </span>
-          <span class="theme-toggle-label">Dark</span>
-        </button>
-      </nav>
-    </header>
-
     <main class="page-shell" id="main">
-      <section class="profile-hero" aria-label="Author profile">
-        <section class="author-card">
+      <section class="profile-hero" id="about" aria-labelledby="profile-title">
+        <h1 id="profile-title">Zihao Zhao</h1>
+        <p class="profile-subtitle">
+          <span aria-hidden="true">🎓</span> Undergraduate Student at Imperial College London
+        </p>
+
+        <div class="intro-grid">
           <img
             class="author-avatar"
             src="./assets/avatar.jpg"
@@ -55,243 +28,229 @@
             width="280"
             height="280"
           />
-          <div class="author-copy">
-            <h1>Zihao Zhao</h1>
-            <p class="author-title">
-              BEng Computing @ Imperial College London
+
+          <div class="intro-copy">
+            <p>
+              I am an undergraduate student in <strong>BEng Computing</strong>
+              at <strong>Imperial College London</strong>. My recent work spans
+              robot-learning experiments, systems programming, compiler
+              construction, and full-stack web prototypes.
             </p>
+            <p>
+              I am currently building software and robotics projects across
+              research internships and course projects, with interests in
+              practical machine learning systems, robot manipulation, and
+              reliable computing infrastructure.
+            </p>
+
+            <div class="profile-badges" aria-label="Profile badges">
+              <a class="badge badge-dark" href="https://github.com/HardenZhao123" rel="noreferrer">GitHub HardenZhao123</a>
+              <a class="badge badge-blue" href="mailto:zhaozihao9218@sina.com">Zihao Zhao</a>
+              <span class="badge badge-red">Imperial College London</span>
+            </div>
+
+            <p class="motto">The ends do not define means, they never do.</p>
+
+            <ul class="profile-links" aria-label="Profile links">
+              <li><a href="mailto:zhaozihao9218@sina.com">Email</a></li>
+              <li><a href="https://github.com/HardenZhao123" rel="noreferrer">GitHub</a></li>
+            </ul>
           </div>
-
-          <ul class="author-links">
-            <li><a href="https://github.com/HardenZhao123" rel="noreferrer">GitHub</a></li>
-            <li><a href="mailto:zhaozihao9218@sina.com">Email</a></li>
-          </ul>
-
-          <p class="motto">The ends do not define means, they never do.</p>
-        </section>
+        </div>
       </section>
 
-      <article class="content">
-        <section class="section" id="about" aria-labelledby="about-title">
-          <h2 id="about-title"><span class="section-marker">01</span> About</h2>
-          <p>
-            I am <strong>Zihao Zhao</strong>, an undergraduate student in
-            <strong>BEng Computing</strong> at
-            <strong>Imperial College London</strong>. My recent work spans
-            robot-learning experiments, systems programming, compiler
-            construction, and full-stack web prototypes.
-          </p>
-
-          <section class="education-section" aria-labelledby="education-title">
-            <div class="card-heading">
-              <h3 id="education-title">Education</h3>
+      <section class="section" id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="academic-list">
+          <article class="academic-item">
+            <div class="item-date">Undergraduate</div>
+            <div class="item-logo wide-logo">
+              <img
+                src="./assets/imperial-college-london-logo.png"
+                alt="Imperial College London logo"
+                width="360"
+                height="40"
+                loading="lazy"
+              />
             </div>
-
-            <div class="education-list">
-              <article class="education-card">
-                <div class="school-logo">
-                  <img
-                    src="./assets/imperial-college-london-logo.png"
-                    alt="Imperial College London logo"
-                    width="360"
-                    height="40"
-                    loading="lazy"
-                  />
-                </div>
-                <div>
-                  <span class="period">Undergraduate</span>
-                  <h4>Imperial College London</h4>
-                  <p>BEng Computing</p>
-                  <p>Undergraduate Student</p>
-                </div>
-              </article>
+            <div class="item-content">
+              <h3>Imperial College London</h3>
+              <p>BEng Computing</p>
+              <p>Undergraduate Student</p>
             </div>
-          </section>
-        </section>
+          </article>
+        </div>
+      </section>
 
-        <section class="section" id="experiences" aria-labelledby="experiences-title">
-          <h2 id="experiences-title"><span class="section-marker">02</span> Experiences</h2>
-          <div class="cv-list">
-            <details class="cv-card">
-              <summary>
-                <span class="item-header">
-                  <span class="item-summary">
-                    <span class="experience-logo">
-                      <img
-                        src="./assets/peking-university-logo.png"
-                        alt="Peking University logo"
-                        width="64"
-                        height="64"
-                        loading="lazy"
-                      />
-                    </span>
-                    <span class="item-main">
-                      <span class="period">Jul 2026 - Present</span>
-                      <span class="item-title">Research Intern</span>
-                      <span class="item-place">Peking University</span>
-                    </span>
-                  </span>
-                  <span class="summary-action" aria-hidden="true"></span>
-                </span>
-              </summary>
-              <div class="details-body">
-                <ul>
-                  <li>Conduct research on RL post-training for a Franka Panda robot arm.</li>
-                </ul>
-              </div>
-            </details>
+      <section class="section" id="experiences" aria-labelledby="experiences-title">
+        <h2 id="experiences-title">Experiences</h2>
+        <div class="academic-list">
+          <details class="academic-item clickable-item">
+            <summary>
+              <span class="item-date">Jul 2026 - Present</span>
+              <span class="item-logo">
+                <img
+                  src="./assets/peking-university-logo.png"
+                  alt="Peking University logo"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
+              </span>
+              <span class="item-content">
+                <span class="item-title">Research Intern</span>
+                <span class="item-place">Peking University</span>
+              </span>
+              <span class="summary-action" aria-hidden="true"></span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Conduct research on RL post-training for a Franka Panda robot arm.</li>
+              </ul>
+            </div>
+          </details>
 
-            <details class="cv-card">
-              <summary>
-                <span class="item-header">
-                  <span class="item-summary">
-                    <span class="experience-logo">
-                      <img
-                        src="./assets/shanghai-jiao-tong-university-logo.png"
-                        alt="Shanghai Jiao Tong University logo"
-                        width="64"
-                        height="64"
-                        loading="lazy"
-                      />
-                    </span>
-                    <span class="item-main">
-                      <span class="period">Jul 2025 - Oct 2025</span>
-                      <span class="item-title">Research Intern</span>
-                      <span class="item-place">Shanghai Jiao Tong University</span>
-                    </span>
-                  </span>
-                  <span class="summary-action" aria-hidden="true"></span>
-                </span>
-              </summary>
-              <div class="details-body">
-                <ul>
-                  <li>Conducted robot learning research on AgileX Mobile ALOHA for manipulation tasks including pen moving, bottle-cap unscrewing, and cube placement.</li>
-                  <li>Built HDF5-to-LeRobot data pipelines and processed EgoVid/AgiBot datasets for training.</li>
-                  <li>Deployed and evaluated ACT, RDT, and Pi0 models on GPU clusters and real robot hardware.</li>
-                  <li>Fine-tuned Pi0 variants on 13 RoboTwin tasks and debugged end-to-end robotics data and inference pipelines.</li>
-                </ul>
-                <div class="card-links">
-                  <a class="small-link" href="https://hardenzhao123.github.io/zihao_demo/" rel="noreferrer">Demos</a>
-                </div>
+          <details class="academic-item clickable-item">
+            <summary>
+              <span class="item-date">Jul 2025 - Oct 2025</span>
+              <span class="item-logo">
+                <img
+                  src="./assets/shanghai-jiao-tong-university-logo.png"
+                  alt="Shanghai Jiao Tong University logo"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
+              </span>
+              <span class="item-content">
+                <span class="item-title">Research Intern</span>
+                <span class="item-place">Shanghai Jiao Tong University</span>
+              </span>
+              <span class="summary-action" aria-hidden="true"></span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Conducted robot learning research on AgileX Mobile ALOHA for manipulation tasks including pen moving, bottle-cap unscrewing, and cube placement.</li>
+                <li>Built HDF5-to-LeRobot data pipelines and processed EgoVid/AgiBot datasets for training.</li>
+                <li>Deployed and evaluated ACT, RDT, and Pi0 models on GPU clusters and real robot hardware.</li>
+                <li>Fine-tuned Pi0 variants on 13 RoboTwin tasks and debugged end-to-end robotics data and inference pipelines.</li>
+              </ul>
+              <div class="card-links">
+                <a class="small-link" href="https://hardenzhao123.github.io/zihao_demo/" rel="noreferrer">Demos</a>
               </div>
-            </details>
-          </div>
-        </section>
+            </div>
+          </details>
+        </div>
+      </section>
 
-        <section class="section" id="projects" aria-labelledby="projects-title">
-          <h2 id="projects-title"><span class="section-marker">03</span> Projects</h2>
-          <div class="project-list">
-            <details class="project-card">
-              <summary>
-                <span class="item-header">
-                  <span class="item-main">
-                    <span class="period">May 2026 - Present</span>
-                    <span class="item-title">WhereToI Web App Group Project</span>
-                  </span>
-                  <span class="summary-action" aria-hidden="true"></span>
-                </span>
-              </summary>
-              <div class="details-body">
-                <ul>
-                  <li>Built a full-stack web prototype for locating and comparing nearby public toilets by distance, access, cleanliness, cost, opening status, and facilities.</li>
-                  <li>Implemented an interactive map with geolocation, search, filters, sorting, toilet detail cards, and external directions.</li>
-                  <li>Developed authenticated feedback workflows with ratings, comments, profile visibility, access history, and Gemini-assisted comment summaries.</li>
-                  <li>Built a Node.js backend with PostgreSQL/SQLite storage, CSV seed import, REST APIs, caching, and optional PaddleOCR/YOLO-based photo analysis.</li>
-                </ul>
-                <div class="card-links">
-                  <a class="small-link" href="https://wheretoi-webapp.onrender.com" rel="noreferrer">Live App</a>
-                </div>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="academic-list">
+          <details class="academic-item clickable-item project-item">
+            <summary>
+              <span class="item-date">May 2026 - Present</span>
+              <span class="item-content">
+                <span class="item-title">WhereToI Web App Group Project</span>
+                <span class="item-place">Full-stack web application</span>
+              </span>
+              <span class="summary-action" aria-hidden="true"></span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Built a full-stack web prototype for locating and comparing nearby public toilets by distance, access, cleanliness, cost, opening status, and facilities.</li>
+                <li>Implemented an interactive map with geolocation, search, filters, sorting, toilet detail cards, and external directions.</li>
+                <li>Developed authenticated feedback workflows with ratings, comments, profile visibility, access history, and Gemini-assisted comment summaries.</li>
+                <li>Built a Node.js backend with PostgreSQL/SQLite storage, CSV seed import, REST APIs, caching, and optional PaddleOCR/YOLO-based photo analysis.</li>
+              </ul>
+              <div class="card-links">
+                <a class="small-link" href="https://wheretoi-webapp.onrender.com" rel="noreferrer">Live App</a>
               </div>
-            </details>
+            </div>
+          </details>
 
-            <details class="project-card">
-              <summary>
-                <span class="item-header">
-                  <span class="item-main">
-                    <span class="period">Jan 2026 - Mar 2026</span>
-                    <span class="item-title">WACC Compiler Group Project</span>
-                  </span>
-                  <span class="summary-action" aria-hidden="true"></span>
-                </span>
-              </summary>
-              <div class="details-body">
-                <ul>
-                  <li>Built a full compiler for the WACC language targeting AArch64 and ARM32 assembly.</li>
-                  <li>Designed the compilation pipeline including lexing, parsing, semantic analysis, TAC intermediate representation, and code generation.</li>
-                  <li>Added peephole optimisations to remove redundant instructions and improve generated assembly efficiency.</li>
-                  <li>Extended the language with function overloading through static type checking and an exception handling mechanism.</li>
-                </ul>
-                <div class="card-links">
-                  <a class="small-link" href="https://wacc-compiler-studio-37rx.onrender.com" rel="noreferrer">Live App</a>
-                </div>
+          <details class="academic-item clickable-item project-item">
+            <summary>
+              <span class="item-date">Jan 2026 - Mar 2026</span>
+              <span class="item-content">
+                <span class="item-title">WACC Compiler Group Project</span>
+                <span class="item-place">Compiler construction</span>
+              </span>
+              <span class="summary-action" aria-hidden="true"></span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Built a full compiler for the WACC language targeting AArch64 and ARM32 assembly.</li>
+                <li>Designed the compilation pipeline including lexing, parsing, semantic analysis, TAC intermediate representation, and code generation.</li>
+                <li>Added peephole optimisations to remove redundant instructions and improve generated assembly efficiency.</li>
+                <li>Extended the language with function overloading through static type checking and an exception handling mechanism.</li>
+              </ul>
+              <div class="card-links">
+                <a class="small-link" href="https://wacc-compiler-studio-37rx.onrender.com" rel="noreferrer">Live App</a>
               </div>
-            </details>
+            </div>
+          </details>
 
-            <details class="project-card">
-              <summary>
-                <span class="item-header">
-                  <span class="item-main">
-                    <span class="period">Oct 2025 - Dec 2025</span>
-                    <span class="item-title">PintOS Group Project</span>
-                  </span>
-                  <span class="summary-action" aria-hidden="true"></span>
-                </span>
-              </summary>
-              <div class="details-body">
-                <ul>
-                  <li>Extended kernel threading with priority scheduling, priority donation, and the BSD scheduler.</li>
-                  <li>Implemented system calls, process loading, argument passing, and safe user-kernel memory access for user programs.</li>
-                  <li>Built virtual memory support with lazy loading, supplemental page tables, dynamic stack growth, and second-chance frame eviction.</li>
-                  <li>Added swap support, shared executable pages, and memory-mapped file management.</li>
-                </ul>
-              </div>
-            </details>
+          <details class="academic-item clickable-item project-item">
+            <summary>
+              <span class="item-date">Oct 2025 - Dec 2025</span>
+              <span class="item-content">
+                <span class="item-title">PintOS Group Project</span>
+                <span class="item-place">Operating systems</span>
+              </span>
+              <span class="summary-action" aria-hidden="true"></span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Extended kernel threading with priority scheduling, priority donation, and the BSD scheduler.</li>
+                <li>Implemented system calls, process loading, argument passing, and safe user-kernel memory access for user programs.</li>
+                <li>Built virtual memory support with lazy loading, supplemental page tables, dynamic stack growth, and second-chance frame eviction.</li>
+                <li>Added swap support, shared executable pages, and memory-mapped file management.</li>
+              </ul>
+            </div>
+          </details>
 
-            <details class="project-card">
-              <summary>
-                <span class="item-header">
-                  <span class="item-main">
-                    <span class="period">Jul 2025 - Aug 2025</span>
-                    <span class="item-title">YOLO-Based Autonomous Path Planner for Urban Driving</span>
-                  </span>
-                  <span class="summary-action" aria-hidden="true"></span>
-                </span>
-              </summary>
-              <div class="details-body">
-                <ul>
-                  <li>Developed an autonomous driving pipeline integrating object detection, traffic sign classification, and traffic light recognition.</li>
-                  <li>Fine-tuned YOLOv8 on GTSDB for traffic sign detection, YOLOv11 for traffic light detection, and a CNN on GTSRB for sign classification.</li>
-                  <li>Designed a rule-based decision module using lane ROIs and field-of-view constraints to classify driving actions as go, caution, or stop.</li>
-                  <li>Built interactive Gradio demos on BDD100K-based videos to visualize path planning decisions.</li>
-                </ul>
-                <div class="card-links">
-                  <a class="small-link" href="https://hardenzhao123.github.io/zihao_demo/" rel="noreferrer">Demos</a>
-                </div>
+          <details class="academic-item clickable-item project-item">
+            <summary>
+              <span class="item-date">Jul 2025 - Aug 2025</span>
+              <span class="item-content">
+                <span class="item-title">YOLO-Based Autonomous Path Planner for Urban Driving</span>
+                <span class="item-place">Computer vision and planning</span>
+              </span>
+              <span class="summary-action" aria-hidden="true"></span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Developed an autonomous driving pipeline integrating object detection, traffic sign classification, and traffic light recognition.</li>
+                <li>Fine-tuned YOLOv8 on GTSDB for traffic sign detection, YOLOv11 for traffic light detection, and a CNN on GTSRB for sign classification.</li>
+                <li>Designed a rule-based decision module using lane ROIs and field-of-view constraints to classify driving actions as go, caution, or stop.</li>
+                <li>Built interactive Gradio demos on BDD100K-based videos to visualize path planning decisions.</li>
+              </ul>
+              <div class="card-links">
+                <a class="small-link" href="https://hardenzhao123.github.io/zihao_demo/" rel="noreferrer">Demos</a>
               </div>
-            </details>
+            </div>
+          </details>
 
-            <details class="project-card">
-              <summary>
-                <span class="item-header">
-                  <span class="item-main">
-                    <span class="period">May 2025 - Jun 2025</span>
-                    <span class="item-title">ARMv8 AArch64 Assembler and Emulator Group Project</span>
-                  </span>
-                  <span class="summary-action" aria-hidden="true"></span>
-                </span>
-              </summary>
-              <div class="details-body">
-                <ul>
-                  <li>Built an AArch64 emulator to simulate execution of binary programs on a Raspberry Pi.</li>
-                  <li>Built an AArch64 assembler translating A64 assembly source code into executable binary files.</li>
-                  <li>Wrote A64 assembly to flash an LED via Raspberry Pi GPIO.</li>
-                  <li>Implemented a 7-segment display counter with GPIO input controls, debouncing, and timed digit updates.</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </section>
-      </article>
+          <details class="academic-item clickable-item project-item">
+            <summary>
+              <span class="item-date">May 2025 - Jun 2025</span>
+              <span class="item-content">
+                <span class="item-title">ARMv8 AArch64 Assembler and Emulator Group Project</span>
+                <span class="item-place">Computer architecture</span>
+              </span>
+              <span class="summary-action" aria-hidden="true"></span>
+            </summary>
+            <div class="details-body">
+              <ul>
+                <li>Built an AArch64 emulator to simulate execution of binary programs on a Raspberry Pi.</li>
+                <li>Built an AArch64 assembler translating A64 assembly source code into executable binary files.</li>
+                <li>Wrote A64 assembly to flash an LED via Raspberry Pi GPIO.</li>
+                <li>Implemented a 7-segment display counter with GPIO input controls, debouncing, and timed digit updates.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">

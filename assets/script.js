@@ -23,28 +23,28 @@ function saveTheme(theme) {
 }
 
 function setTheme(theme) {
-  const isLight = theme === "light";
+  const isDark = theme === "dark";
 
-  root.dataset.theme = isLight ? "light" : "dark";
+  root.dataset.theme = isDark ? "dark" : "light";
 
   if (themeToggle) {
-    themeToggle.setAttribute("aria-pressed", String(isLight));
+    themeToggle.setAttribute("aria-pressed", String(isDark));
     themeToggle.setAttribute(
       "aria-label",
-      isLight ? "Switch to dark theme" : "Switch to light theme"
+      isDark ? "Switch to light theme" : "Switch to dark theme"
     );
   }
 
   if (themeToggleLabel) {
-    themeToggleLabel.textContent = isLight ? "Light" : "Dark";
+    themeToggleLabel.textContent = isDark ? "Dark" : "Light";
   }
 }
 
-setTheme(getSavedTheme() === "light" ? "light" : "dark");
-
 if (themeToggle) {
+  setTheme(getSavedTheme() === "dark" ? "dark" : "light");
+
   themeToggle.addEventListener("click", () => {
-    const nextTheme = root.dataset.theme === "light" ? "dark" : "light";
+    const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
 
     setTheme(nextTheme);
     saveTheme(nextTheme);
