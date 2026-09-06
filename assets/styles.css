@@ -133,7 +133,7 @@ strong {
   width: 124px;
   height: 124px;
   border: 1px solid var(--line);
-  border-radius: 0;
+  border-radius: 50%;
   background: var(--surface);
   box-shadow: none;
   object-fit: cover;
