@@ -405,7 +405,7 @@ strong {
 
 .publication-item {
   display: grid;
-  grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+  grid-template-columns: minmax(15rem, 22rem) minmax(0, 1fr);
   gap: 1.25rem;
   align-items: start;
   border-bottom: 1px solid var(--line);
@@ -414,9 +414,11 @@ strong {
 
 .publication-figure {
   display: block;
+  align-self: start;
   overflow: hidden;
   border: 1px solid var(--line-soft);
   background: #ffffff;
+  line-height: 0;
 }
 
 .publication-figure:hover {
@@ -425,7 +427,7 @@ strong {
 
 .publication-figure img {
   width: 100%;
-  aspect-ratio: 1490 / 513;
+  height: auto;
   object-fit: contain;
 }
 
