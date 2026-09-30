@@ -50,3 +50,49 @@ if (themeToggle) {
     saveTheme(nextTheme);
   });
 }
+
+const sectionLinks = Array.from(document.querySelectorAll("[data-section-link]"));
+const trackedSections = sectionLinks
+  .map((link) => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
+
+function updateActiveSection() {
+  if (!trackedSections.length) return;
+
+  const marker = window.scrollY + Math.min(window.innerHeight * 0.3, 240);
+  let activeSection = trackedSections[0];
+
+  trackedSections.forEach((section) => {
+    if (section.offsetTop <= marker) activeSection = section;
+  });
+
+  sectionLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${activeSection.id}`;
+
+    link.classList.toggle("is-active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "location");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
+
+let sectionUpdateQueued = false;
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (sectionUpdateQueued) return;
+
+    sectionUpdateQueued = true;
+    window.requestAnimationFrame(() => {
+      updateActiveSection();
+      sectionUpdateQueued = false;
+    });
+  },
+  { passive: true }
+);
+
+window.addEventListener("resize", updateActiveSection);
+updateActiveSection();
