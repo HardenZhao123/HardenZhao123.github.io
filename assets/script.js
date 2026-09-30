@@ -61,11 +61,18 @@ function updateActiveSection() {
 
   const markerOffset = window.innerWidth <= 900 ? 76 : 96;
   const marker = window.scrollY + markerOffset;
-  let activeSection = trackedSections[0];
+  const isAtPageBottom =
+    Math.ceil(window.scrollY + window.innerHeight) >=
+    document.documentElement.scrollHeight - 2;
+  let activeSection = isAtPageBottom
+    ? trackedSections[trackedSections.length - 1]
+    : trackedSections[0];
 
-  trackedSections.forEach((section) => {
-    if (section.offsetTop <= marker) activeSection = section;
-  });
+  if (!isAtPageBottom) {
+    trackedSections.forEach((section) => {
+      if (section.offsetTop <= marker) activeSection = section;
+    });
+  }
 
   sectionLinks.forEach((link) => {
     const isActive = link.getAttribute("href") === `#${activeSection.id}`;

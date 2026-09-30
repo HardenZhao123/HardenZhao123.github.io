@@ -8,7 +8,7 @@
       content="Zihao Zhao's academic homepage with education, publications, experiences, and projects."
     />
     <title>Zihao Zhao</title>
-    <link rel="stylesheet" href="./assets/styles.css?v=larger-home-hero" />
+    <link rel="stylesheet" href="./assets/styles.css?v=real-robot-models" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -42,6 +42,17 @@
               <path d="M3 12h18" />
             </svg>
             <span>Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#robots" data-section-link>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <rect x="4" y="8" width="16" height="11" rx="3" />
+              <path d="M12 8V4H9" />
+              <path d="M8 13h.01M16 13h.01M9 17h6" />
+              <path d="M4 12H2M22 12h-2" />
+            </svg>
+            <span>Robots</span>
           </a>
         </li>
         <li>
@@ -188,6 +199,43 @@
               </div>
             </div>
           </details>
+        </div>
+      </section>
+
+      <section class="section robots-section" id="robots" aria-labelledby="robots-title">
+        <div class="robots-section-header">
+          <h2 id="robots-title">Robotic Platforms</h2>
+          <p>Robotic platforms I have hands-on experience with.</p>
+        </div>
+
+        <div class="robot-grid">
+          <article class="robot-card">
+            <div class="robot-viewer" data-robot-viewer="franka">
+              <canvas
+                class="robot-canvas"
+                data-robot-canvas
+                aria-label="3D model of the Franka Emika Panda"
+              ></canvas>
+              <p class="robot-loading" data-robot-loading role="status">
+                Loading Franka Panda...
+              </p>
+            </div>
+            <h3>Franka Emika Panda</h3>
+          </article>
+
+          <article class="robot-card">
+            <div class="robot-viewer" data-robot-viewer="aloha">
+              <canvas
+                class="robot-canvas"
+                data-robot-canvas
+                aria-label="3D model of the AgileX Mobile ALOHA"
+              ></canvas>
+              <p class="robot-loading" data-robot-loading role="status">
+                Loading Mobile ALOHA...
+              </p>
+            </div>
+            <h3>AgileX Mobile ALOHA</h3>
+          </article>
         </div>
       </section>
 
@@ -350,6 +398,7 @@
       </section>
     </main>
 
-    <script src="./assets/script.js?v=navigation-highlight"></script>
+    <script src="./assets/script.js?v=navigation-highlight-v2"></script>
+    <script type="module" src="./assets/robot-viewer.js?v=3"></script>
   </body>
 </html>
