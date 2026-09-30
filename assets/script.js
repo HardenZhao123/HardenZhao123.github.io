@@ -59,7 +59,8 @@ const trackedSections = sectionLinks
 function updateActiveSection() {
   if (!trackedSections.length) return;
 
-  const marker = window.scrollY + Math.min(window.innerHeight * 0.3, 240);
+  const markerOffset = window.innerWidth <= 900 ? 76 : 96;
+  const marker = window.scrollY + markerOffset;
   let activeSection = trackedSections[0];
 
   trackedSections.forEach((section) => {

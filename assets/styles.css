@@ -189,7 +189,7 @@ strong {
   display: flex;
   align-items: center;
   width: calc(100vw - 12.5rem);
-  min-height: 23rem;
+  min-height: 29rem;
   margin-left: calc((100vw - 12.5rem - 100%) / -2);
   overflow: hidden;
   background-image: url("./imperial-campus-hero.jpg");
@@ -210,11 +210,11 @@ strong {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 9.5rem minmax(0, 1fr);
-  gap: 2rem;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 2.6rem;
   align-items: center;
   width: 100%;
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .hero-copy {
@@ -228,7 +228,7 @@ strong {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
-  font-size: clamp(3rem, 6vw, 4.4rem);
+  font-size: clamp(3.6rem, 6vw, 5.2rem);
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
@@ -240,7 +240,7 @@ strong {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
-  font-size: 1.08rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -250,7 +250,7 @@ strong {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
-  font-size: 0.96rem;
+  font-size: 1.05rem;
   line-height: 1.4;
 }
 
@@ -260,8 +260,8 @@ strong {
 }
 
 .author-avatar {
-  width: 9.5rem;
-  height: 9.5rem;
+  width: 11rem;
+  height: 11rem;
   border: 3px solid rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   background: #ffffff;
@@ -310,7 +310,7 @@ strong {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   font-weight: 650;
   line-height: 1.4;
 }
@@ -671,7 +671,7 @@ strong {
   }
 
   .profile-hero {
-    min-height: 28rem;
+    min-height: 31rem;
     background-position: 53% center;
   }
 
@@ -683,12 +683,12 @@ strong {
   }
 
   .profile-hero h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
   }
 
   .author-avatar {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   .profile-subtitle {
