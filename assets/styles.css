@@ -364,7 +364,7 @@ strong {
 
 .robot-viewer {
   position: relative;
-  aspect-ratio: 1.04 / 1;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 1px solid var(--line-soft);
   border-radius: 5px;
