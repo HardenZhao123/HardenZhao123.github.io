@@ -266,10 +266,10 @@
             </summary>
             <div class="details-body">
               <ul>
-                <li>Developed an autonomous driving pipeline integrating object detection, traffic sign classification, and traffic light recognition.</li>
-                <li>Fine-tuned YOLOv8 on GTSDB for traffic sign detection, YOLOv11 for traffic light detection, and a CNN on GTSRB for sign classification.</li>
-                <li>Designed a rule-based decision module using lane ROIs and field-of-view constraints to classify driving actions as go, caution, or stop.</li>
-                <li>Built interactive Gradio demos on BDD100K-based videos to visualize path planning decisions.</li>
+                <li>Developed a causal, uncertainty-aware trajectory advisory system for front-view driving videos, integrating YOLO tracking, traffic sign/light recognition, and YOLOPv2 drivable-area and lane segmentation.</li>
+                <li>Fine-tuned YOLOv8 on GTSDB, YOLOv11 for traffic-light detection, and a CNN on GTSRB; added lane association and multi-frame confirmation to reduce false detections.</li>
+                <li>Designed a multi-hypothesis planner combining semantic road boundaries, bounded ego corridors, candidate-specific obstacle checks, range-rate/TTC estimation, and uncertainty-aware <code>UNKNOWN</code> rejection.</li>
+                <li>Built a Gradio demo and video-level evaluation pipeline for day, night, construction, intersection, and congested-road scenarios using ADE/FDE, off-road, collision-risk, TTC, and temporal-stability metrics.</li>
               </ul>
               <div class="card-links">
                 <a class="small-link" href="https://hardenzhao123.github.io/zihao_demo/" rel="noreferrer">Demos</a>
