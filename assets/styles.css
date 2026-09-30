@@ -188,7 +188,9 @@ strong {
   position: relative;
   display: flex;
   align-items: center;
+  width: calc(100vw - 12.5rem);
   min-height: 23rem;
+  margin-left: calc((100vw - 12.5rem - 100%) / -2);
   overflow: hidden;
   background-image: url("./imperial-campus-hero.jpg");
   background-position: center;
@@ -650,6 +652,11 @@ strong {
   .profile-introduction,
   .section {
     scroll-margin-top: 4.1rem;
+  }
+
+  .profile-hero {
+    width: 100vw;
+    margin-left: calc((100vw - 100%) / -2);
   }
 }
 
