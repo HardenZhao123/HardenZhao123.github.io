@@ -44,6 +44,12 @@ const ROBOTS = {
     cameraDirection: new THREE.Vector3(1.3, 0.75, 1.7),
     fit: 1.08,
   },
+  umi: {
+    url: "./assets/models/hil-umi.glb",
+    prepare: prepareHilUmi,
+    cameraDirection: new THREE.Vector3(0.35, 0.55, 1.2),
+    fit: 1.12,
+  },
 };
 
 function makeMaterial(color, key) {
@@ -122,6 +128,16 @@ function preparePanda(gltf) {
 function prepareMobileAloha(gltf) {
   const model = gltf.scene;
   model.rotation.y = -0.14;
+  model.traverse((object) => {
+    if (!object.isMesh) return;
+    object.castShadow = true;
+    object.receiveShadow = true;
+  });
+  return model;
+}
+
+function prepareHilUmi(gltf) {
+  const model = gltf.scene;
   model.traverse((object) => {
     if (!object.isMesh) return;
     object.castShadow = true;

@@ -8,6 +8,10 @@
   [AgileX Robotics product page](https://www.agilex.ai/page/690aef2d5e78cfa260412cb5). The
   original model remains copyright AgileX Robotics. Geometry was simplified and compressed for
   browser delivery; its appearance and proportions were not redesigned.
+- `hil-umi.glb` is the HIL-UMI device reconstruction supplied by Zihao Zhao. It combines a
+  user-reconstructed mounting assembly with the AGIBOT OmniPicker, Meta Quest 3 Touch Plus, and
+  RealSense D405 assets. Detailed provenance is recorded in `HIL-UMI-SOURCES.md`; the corresponding
+  Apache-2.0 and MIT license texts are stored beside the model.
 
 Three.js and its example modules are distributed under the MIT License; see
 `assets/vendor/THREE-LICENSE.txt`.
