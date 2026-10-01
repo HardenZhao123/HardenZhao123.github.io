@@ -364,8 +364,8 @@ strong {
 
 .robot-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .robot-card {
@@ -752,6 +752,10 @@ html[data-theme="dark"] .robot-viewer {
   .profile-hero {
     width: 100vw;
     margin-left: calc((100vw - 100%) / -2);
+  }
+
+  .robot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
 }
