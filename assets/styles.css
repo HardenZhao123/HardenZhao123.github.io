@@ -184,12 +184,22 @@ strong {
   padding: 0.8rem 0 3rem;
 }
 
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin-top: -0.8rem;
+  scroll-margin-top: 1rem;
+}
+
 .profile-hero {
   position: relative;
   display: flex;
+  flex: 1 1 auto;
   align-items: center;
   width: calc(100vw - 12.5rem);
-  min-height: 29rem;
+  min-height: 0;
   margin-left: calc((100vw - 12.5rem - 100%) / -2);
   overflow: hidden;
   background-image: url("./imperial-campus-hero.jpg");
@@ -727,10 +737,16 @@ html[data-theme="dark"] .robot-viewer {
     height: 1.15rem;
   }
 
+  .home-screen,
   .profile-hero,
   .profile-introduction,
   .section {
     scroll-margin-top: 4.1rem;
+  }
+
+  .home-screen {
+    min-height: calc(100vh - 3.6rem);
+    min-height: calc(100dvh - 3.6rem);
   }
 
   .profile-hero {
@@ -751,7 +767,6 @@ html[data-theme="dark"] .robot-viewer {
   }
 
   .profile-hero {
-    min-height: 31rem;
     background-position: 53% center;
   }
 
