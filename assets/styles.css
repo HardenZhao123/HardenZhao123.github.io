@@ -686,39 +686,39 @@ html[data-theme="dark"] .robot-viewer {
   color: var(--text);
 }
 
-.visitor-map-section {
+.visitor-globe-section {
   padding-bottom: 0.8rem;
 }
 
-.visitor-map-header {
+.visitor-globe-header {
   margin-bottom: 1rem;
 }
 
-.visitor-map-header h2 {
+.visitor-globe-header h2 {
   margin-bottom: 0.72rem;
 }
 
-.visitor-map-header p {
+.visitor-globe-header p {
   margin: 0;
   color: var(--text-soft);
   font-size: 1.08rem;
 }
 
-.visitor-map-frame {
+.visitor-globe-frame {
   position: relative;
   display: grid;
-  min-height: 18rem;
+  min-height: 27rem;
   place-items: center;
   overflow: hidden;
   border: 1px solid var(--line-soft);
-  background: #f4f6f8;
+  background: #f6f8fa;
 }
 
-html[data-theme="dark"] .visitor-map-frame {
+html[data-theme="dark"] .visitor-globe-frame {
   background: #22272e;
 }
 
-.visitor-map-noscript {
+.visitor-globe-noscript {
   margin: 0 0 0.85rem;
   color: var(--muted);
   font-family:
@@ -728,29 +728,27 @@ html[data-theme="dark"] .visitor-map-frame {
   line-height: 1.5;
 }
 
-.visitor-map-embed {
-  width: 100%;
-  min-height: 18rem;
-  background: #f4f6f8;
+.visitor-globe-embed {
+  display: grid;
+  place-items: center;
+  width: 25rem;
+  height: 25rem;
   line-height: 0;
 }
 
-.visitor-map-embed > a,
-.visitor-map-embed img,
-.visitor-map-embed iframe {
-  display: block;
-  width: 100% !important;
-  max-width: none !important;
+.visitor-globe-embed .mmvst_outer {
+  display: grid;
+  place-items: center;
+  width: 25rem !important;
+  height: 25rem !important;
+  max-width: 100%;
 }
 
-.visitor-map-embed img,
-.visitor-map-embed iframe {
-  min-height: 18rem;
-  border: 0;
-  object-fit: cover;
+.visitor-globe-embed .mmvst_inner {
+  margin: 0 auto !important;
 }
 
-.visitor-map-privacy {
+.visitor-globe-privacy {
   margin: 0.62rem 0 0;
   color: var(--muted);
   font-family:
@@ -760,7 +758,7 @@ html[data-theme="dark"] .visitor-map-frame {
   line-height: 1.45;
 }
 
-.visitor-map-privacy a {
+.visitor-globe-privacy a {
   font-weight: 600;
 }
 
@@ -944,10 +942,17 @@ html[data-theme="dark"] .visitor-map-frame {
     gap: 0.75rem;
   }
 
-  .visitor-map-frame,
-  .visitor-map-embed,
-  .visitor-map-embed img,
-  .visitor-map-embed iframe {
-    min-height: 13rem;
+  .visitor-globe-frame,
+  .visitor-globe-embed {
+    min-height: 0;
   }
+
+  .visitor-globe-frame {
+    height: 22rem;
+  }
+
+  .visitor-globe-embed {
+    transform: scale(0.8);
+  }
+
 }
