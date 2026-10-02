@@ -212,7 +212,7 @@ strong {
 .profile-hero::before {
   position: absolute;
   inset: 0;
-  background: rgba(8, 17, 31, 0.44);
+  background: rgba(8, 17, 31, 0.58);
   content: "";
 }
 
@@ -279,26 +279,6 @@ strong {
   object-fit: cover;
 }
 
-.profile-introduction {
-  max-width: 52rem;
-  padding: 1.45rem 0 0.2rem;
-  scroll-margin-top: 1rem;
-}
-
-.profile-introduction p {
-  max-width: 52rem;
-  color: var(--text-soft);
-  font-size: 1.08rem;
-  line-height: 1.55;
-}
-
-.motto {
-  margin: 0.5rem 0 0;
-  color: var(--muted);
-  font-size: 1rem;
-  font-style: italic;
-}
-
 .profile-links {
   display: flex;
   flex-wrap: wrap;
@@ -328,6 +308,38 @@ strong {
 .profile-links a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+.hero-biography {
+  max-width: 50rem;
+  margin-top: 1.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.45);
+  padding-top: 1.2rem;
+}
+
+.hero-biography p {
+  margin-bottom: 0.62rem;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 1.02rem;
+  line-height: 1.52;
+}
+
+.hero-biography strong,
+.hero-biography a {
+  color: #ffffff;
+}
+
+.hero-biography a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.hero-biography .motto {
+  margin: 0.78rem 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.96rem;
+  font-style: italic;
 }
 
 .section {
@@ -674,6 +686,84 @@ html[data-theme="dark"] .robot-viewer {
   color: var(--text);
 }
 
+.visitor-map-section {
+  padding-bottom: 0.8rem;
+}
+
+.visitor-map-header {
+  margin-bottom: 1rem;
+}
+
+.visitor-map-header h2 {
+  margin-bottom: 0.72rem;
+}
+
+.visitor-map-header p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 1.08rem;
+}
+
+.visitor-map-frame {
+  position: relative;
+  display: grid;
+  min-height: 18rem;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  background: #f4f6f8;
+}
+
+html[data-theme="dark"] .visitor-map-frame {
+  background: #22272e;
+}
+
+.visitor-map-noscript {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.visitor-map-embed {
+  width: 100%;
+  min-height: 18rem;
+  background: #f4f6f8;
+  line-height: 0;
+}
+
+.visitor-map-embed > a,
+.visitor-map-embed img,
+.visitor-map-embed iframe {
+  display: block;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.visitor-map-embed img,
+.visitor-map-embed iframe {
+  min-height: 18rem;
+  border: 0;
+  object-fit: cover;
+}
+
+.visitor-map-privacy {
+  margin: 0.62rem 0 0;
+  color: var(--muted);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.visitor-map-privacy a {
+  font-weight: 600;
+}
+
 .page-footer {
   width: min(980px, calc(100% - 1.2rem));
   margin: 0 auto;
@@ -739,7 +829,6 @@ html[data-theme="dark"] .robot-viewer {
 
   .home-screen,
   .profile-hero,
-  .profile-introduction,
   .section {
     scroll-margin-top: 4.1rem;
   }
@@ -776,26 +865,38 @@ html[data-theme="dark"] .robot-viewer {
 
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 1.1rem;
+    gap: 0.85rem;
     align-self: end;
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   .profile-hero h1 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 
   .author-avatar {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   .profile-subtitle {
     font-size: 0.96rem;
   }
 
-  .profile-introduction {
-    padding-top: 1.2rem;
+  .hero-biography {
+    margin-top: 0.9rem;
+    padding-top: 0.85rem;
+  }
+
+  .hero-biography p {
+    margin-bottom: 0.48rem;
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .hero-biography .motto {
+    margin-top: 0.58rem;
+    font-size: 0.88rem;
   }
 
   .robots-section-header {
@@ -841,5 +942,12 @@ html[data-theme="dark"] .robot-viewer {
   .publication-item {
     grid-template-columns: 1fr;
     gap: 0.75rem;
+  }
+
+  .visitor-map-frame,
+  .visitor-map-embed,
+  .visitor-map-embed img,
+  .visitor-map-embed iframe {
+    min-height: 13rem;
   }
 }
