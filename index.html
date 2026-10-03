@@ -308,17 +308,26 @@
 
       <section class="section" id="projects" aria-labelledby="projects-title">
         <h2 id="projects-title">Projects</h2>
-        <div class="academic-list">
-          <details class="academic-item clickable-item project-item">
+        <div class="project-grid">
+          <details class="project-card">
             <summary>
-              <span class="item-date">May 2026 - Present</span>
-              <span class="item-content">
-                <span class="item-title">WhereToI Web App</span>
-                <span class="item-place">Full-stack web application</span>
+              <span class="project-cover project-cover-image">
+                <img
+                  src="./assets/wheretoi-logo.jpg"
+                  alt="WhereToI logo"
+                  width="1024"
+                  height="1024"
+                  loading="lazy"
+                />
               </span>
-              <span class="summary-action" aria-hidden="true"></span>
+              <span class="project-card-copy">
+                <span class="project-card-meta">May 2026 - Present · Full-stack web application</span>
+                <span class="project-card-title">WhereToI Web App</span>
+                <span class="project-card-summary">A geospatial web app for finding and comparing nearby public toilets.</span>
+              </span>
+              <span class="project-card-toggle" aria-hidden="true"></span>
             </summary>
-            <div class="details-body">
+            <div class="project-card-details">
               <ul>
                 <li>Built a full-stack web prototype for locating and comparing nearby public toilets by distance, access, cleanliness, cost, opening status, and facilities.</li>
                 <li>Implemented an interactive map with geolocation, search, filters, sorting, toilet detail cards, and external directions.</li>
@@ -331,16 +340,20 @@
             </div>
           </details>
 
-          <details class="academic-item clickable-item project-item">
+          <details class="project-card">
             <summary>
-              <span class="item-date">Jan 2026 - Mar 2026</span>
-              <span class="item-content">
-                <span class="item-title">WACC Compiler</span>
-                <span class="item-place">Compiler</span>
+              <span class="project-cover project-cover-wacc" aria-hidden="true">
+                <span class="project-cover-title">WACC</span>
+                <span class="project-cover-subtitle">source → assembly</span>
               </span>
-              <span class="summary-action" aria-hidden="true"></span>
+              <span class="project-card-copy">
+                <span class="project-card-meta">Jan 2026 - Mar 2026 · Compiler</span>
+                <span class="project-card-title">WACC Compiler</span>
+                <span class="project-card-summary">A multi-target compiler for AArch64, ARM32 and x86-64 assembly.</span>
+              </span>
+              <span class="project-card-toggle" aria-hidden="true"></span>
             </summary>
-            <div class="details-body">
+            <div class="project-card-details">
               <ul>
                 <li>Built a full compiler for the WACC language targeting AArch64, ARM32 and x86-64 assembly.</li>
                 <li>Designed the compilation pipeline including lexing, parsing, semantic analysis, TAC intermediate representation, and code generation.</li>
@@ -353,16 +366,20 @@
             </div>
           </details>
 
-          <details class="academic-item clickable-item project-item">
+          <details class="project-card">
             <summary>
-              <span class="item-date">Oct 2025 - Dec 2025</span>
-              <span class="item-content">
-                <span class="item-title">PintOS</span>
-                <span class="item-place">Operating systems</span>
+              <span class="project-cover project-cover-pintos" aria-hidden="true">
+                <span class="project-cover-title">PintOS</span>
+                <span class="project-cover-subtitle">kernel · VM · scheduler</span>
               </span>
-              <span class="summary-action" aria-hidden="true"></span>
+              <span class="project-card-copy">
+                <span class="project-card-meta">Oct 2025 - Dec 2025 · Operating systems</span>
+                <span class="project-card-title">PintOS</span>
+                <span class="project-card-summary">Kernel extensions covering scheduling, user programs and virtual memory.</span>
+              </span>
+              <span class="project-card-toggle" aria-hidden="true"></span>
             </summary>
-            <div class="details-body">
+            <div class="project-card-details">
               <ul>
                 <li>Extended kernel threading with priority scheduling, priority donation, and the BSD scheduler.</li>
                 <li>Implemented system calls, process loading, argument passing, and safe user-kernel memory access for user programs.</li>
@@ -375,16 +392,20 @@
             </div>
           </details>
 
-          <details class="academic-item clickable-item project-item">
+          <details class="project-card">
             <summary>
-              <span class="item-date">Jul 2025 - Aug 2025</span>
-              <span class="item-content">
-                <span class="item-title">YOLO-Based Autonomous Path Planner for Urban Driving</span>
-                <span class="item-place">Computer vision</span>
+              <span class="project-cover project-cover-yolo" aria-hidden="true">
+                <span class="project-cover-title">YOLO</span>
+                <span class="project-cover-subtitle">urban path planner</span>
               </span>
-              <span class="summary-action" aria-hidden="true"></span>
+              <span class="project-card-copy">
+                <span class="project-card-meta">Jul 2025 - Aug 2025 · Computer vision</span>
+                <span class="project-card-title">YOLO-Based Autonomous Path Planner</span>
+                <span class="project-card-summary">An uncertainty-aware trajectory advisory system for urban driving videos.</span>
+              </span>
+              <span class="project-card-toggle" aria-hidden="true"></span>
             </summary>
-            <div class="details-body">
+            <div class="project-card-details">
               <ul>
                 <li>Developed a causal, uncertainty-aware trajectory advisory system for front-view driving videos, integrating YOLO tracking, traffic sign/light recognition, and YOLOPv2 drivable-area and lane segmentation.</li>
                 <li>Fine-tuned YOLOv8 on GTSDB, YOLOv11 for traffic-light detection, and a CNN on GTSRB; added lane association and multi-frame confirmation to reduce false detections.</li>
@@ -397,16 +418,20 @@
             </div>
           </details>
 
-          <details class="academic-item clickable-item project-item">
+          <details class="project-card">
             <summary>
-              <span class="item-date">May 2025 - Jun 2025</span>
-              <span class="item-content">
-                <span class="item-title">ARMv8 AArch64 Assembler and Emulator</span>
-                <span class="item-place">Computer architecture</span>
+              <span class="project-cover project-cover-arm" aria-hidden="true">
+                <span class="project-cover-title">ARMv8</span>
+                <span class="project-cover-subtitle">AArch64 · GPIO</span>
               </span>
-              <span class="summary-action" aria-hidden="true"></span>
+              <span class="project-card-copy">
+                <span class="project-card-meta">May 2025 - Jun 2025 · Computer architecture</span>
+                <span class="project-card-title">ARMv8 Assembler and Emulator</span>
+                <span class="project-card-summary">An AArch64 toolchain with Raspberry Pi GPIO hardware demonstrations.</span>
+              </span>
+              <span class="project-card-toggle" aria-hidden="true"></span>
             </summary>
-            <div class="details-body">
+            <div class="project-card-details">
               <ul>
                 <li>Built an AArch64 emulator to simulate execution of binary programs on a Raspberry Pi.</li>
                 <li>Built an AArch64 assembler translating A64 assembly source code into executable binary files.</li>
