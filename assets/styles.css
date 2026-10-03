@@ -631,6 +631,11 @@ html[data-theme="dark"] .robot-viewer {
   object-fit: contain;
 }
 
+.project-cover-image .project-cover-screenshot {
+  object-fit: cover;
+  object-position: center top;
+}
+
 .project-cover-title {
   font-size: 2.4rem;
   font-weight: 760;
@@ -644,22 +649,10 @@ html[data-theme="dark"] .robot-viewer {
   opacity: 0.74;
 }
 
-.project-cover-wacc {
-  border-color: #303a47;
-  background: #202934;
-  color: #f8fafc;
-}
-
 .project-cover-pintos {
   border-color: #ccd9d3;
   background: #e6eeea;
   color: #213e35;
-}
-
-.project-cover-yolo {
-  border-color: #dfd2c5;
-  background: #f1e9e0;
-  color: #7b351d;
 }
 
 .project-cover-arm {
