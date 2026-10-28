@@ -202,9 +202,12 @@ strong {
   min-height: 0;
   margin-left: calc((100vw - 12.5rem - 100%) / -2);
   overflow: hidden;
-  background-image: url("./imperial-campus-aerial.png");
-  background-position: center;
-  background-size: cover;
+  background-color: #34433d;
+  background-image:
+    url("./imperial-campus-aerial.png"),
+    url("./imperial-campus-aerial-preview.webp");
+  background-position: center, center;
+  background-size: cover, cover;
   color: #ffffff;
   scroll-margin-top: 1rem;
 }
